@@ -186,7 +186,7 @@ const PackageCard = ({ packageData }) => {
             </div>
           </div>
 
-          <Link href={`/packages/test`}>
+          <Link href={`/details`}>
             <button className="px-4 py-2 rounded-full bg-[#F14479] text-white text-xs font-medium transition-transform hover:scale-105 active:scale-95">
               View Details
             </button>
