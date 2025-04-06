@@ -315,7 +315,11 @@ export default function PackageDetailPage() {
           {/* Left Column - Package Details */}
           <div className="w-full lg:w-2/3">
             <Tab.Group>
-            <Tab.List className="flex overflow-x-auto hide-scrollbar md:overflow-visible rounded-xl bg-gray-100 dark:bg-gray-800 p-1.5 mb-6">
+            <Tab.List className="flex overflow-x-auto hide-scrollbar md:overflow-visible rounded-xl bg-gray-100 dark:bg-gray-800 p-1.5 mb-6"    style={{
+    msOverflowStyle: 'none',  /* IE and Edge */
+    scrollbarWidth: 'none',   /* Firefox */
+    WebkitOverflowScrolling: 'touch'
+  }} >
   {["Overview", "Itinerary", "Gallery", "Reviews", "FAQs"].map(
     (tab) => (
       <Tab
